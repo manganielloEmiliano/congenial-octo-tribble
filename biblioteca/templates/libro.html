@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detalles del Libro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Detalles del Libro</h1>
+        <h2>{{ libro.titulo }}</h2>
+        <p>Autores: {{ libro.autores }}</p>
+        <p>ISBN: {{ libro.isbn }}</p>
+        <p>Año de Publicación: {{ libro.anio_publicacion }}</p>
+        <p>Editorial: {{ libro.editorial }}</p>
+        <p>Descripción: {{ libro.descripcion }}</p>
+    </div>
+</body>
+
+</html>
